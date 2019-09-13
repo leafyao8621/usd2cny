@@ -25,7 +25,6 @@ int main(void) {
     curl_easy_cleanup(curl);
     curl_global_cleanup();
     char *i = buf;
-    char buff[4];
     for (; i != buf_end && memcmp(i, usd, 3); i++);
     for (int j = 0; j < 5; j++) {
         for (i++; i != buf_end && memcmp(i, center, 6); i++);
